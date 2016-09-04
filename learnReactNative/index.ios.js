@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import CaveText from './components/caveText';
 
 const styles = StyleSheet.create({
   container: {
@@ -46,6 +47,7 @@ class learnReactNative extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <CaveText />
       </View>
     );
   }
