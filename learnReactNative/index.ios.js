@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  Image,
   Text,
   View
 } from 'react-native';
@@ -33,23 +34,16 @@ const styles = StyleSheet.create({
 });
 
 class learnReactNative extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-          沈余
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-        <CaveText />
-      </View>
-    );
+    render() {
+        const props = {
+            foo:1,
+            bar:1
+        }
+        return (
+            <View style={styles.container}>
+                <CaveText {...props} foo="2" />
+            </View>
+        );
   }
 }
 

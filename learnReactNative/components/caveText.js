@@ -17,7 +17,7 @@ import {
 class CaveText extends Component {
     render(){
         return (
-            <Text>Caveman for 140</Text>
+            <Text>Caveman for {this.props.foo}</Text>
         );
 
     }

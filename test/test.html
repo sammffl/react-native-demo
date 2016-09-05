@@ -21,7 +21,7 @@
             border:1px solid black;
         }
         .items{
-            align-items: flex-start;
+            align-self: flex-start;
             width:58px;
             height: 58px;
             background-color: red;
@@ -36,26 +36,24 @@
         .order3{
             order: 3;
         }
+
+        .grow{
+            flex-grow: 1;
+        }
+        .basis{
+            flex-basis: 80px
+        }
     </style>
 </head>
 
 <body>
 <div class="container">
-    <div class="items">1</div>
-    <div class="items">2</div>
+    <div class="items basis">1</div>
+    <div class="items ">2</div>
     <div class="items order2">3</div>
     <div class="items">4</div>
     <div class="items order3">5</div>
-    <div class="items order1">6</div>
-    <div class="items">7</div>
-    <div class="items">8</div>
-    <div class="items">9</div>
-    <div class="items">10</div>
-    <div class="items">11</div>
-    <div class="items">12</div>
-    <div class="items">13</div>
-    <div class="items">14</div>
-    <div class="items">15</div>
+
 </div>
 </body>
 </html>
